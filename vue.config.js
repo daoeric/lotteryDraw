@@ -6,6 +6,14 @@ module.exports = {
     : '/',
    // 输出文件目录
    outputDir: 'lucky',
+    devServer: {
+        allowedHosts: [
+            'b.test.com',  // 允许通过 b.test.com 访问
+            'a.test.com',
+            'localhost',   // 也允许 localhost
+            '127.0.0.1'    // 允许 127.0.0.1
+        ],
+    },
    pages:{
    	index:{
    		entry:'src/pages/index/index.js',
@@ -23,12 +31,12 @@ module.exports = {
    		filename:'myAward.html',
    	}
    },
-   css: {   	      
+   css: {
           loaderOptions: {
             css: {},
             postcss: {
               plugins: [
-                require('autoprefixer'),                               
+                require('autoprefixer'),
                 require('postcss-px2rem')({
                   remUnit: 37.5
                 })

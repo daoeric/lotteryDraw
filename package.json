@@ -1,7 +1,7 @@
 {
   "name": "vueLucky",
   "version": "0.1.0",
-  "author":"https://github.com/dml5775/lotteryDraw",
+  "author": "https://github.com/dml5775/lotteryDraw",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "autoprefixer": "^9.4.6",
+    "axios": "^1.7.7",
     "less": "^3.9.0",
     "lib-flexible": "^0.3.2",
     "postcss-px2rem": "^0.3.0",
